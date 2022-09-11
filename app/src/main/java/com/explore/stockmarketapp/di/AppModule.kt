@@ -28,6 +28,8 @@ object AppModule {
             .create()
     }
 
+    @Provides
+    @Singleton
     fun provideStockDatabase(app: Application):StockDatabase{
         return Room.databaseBuilder(
             app,
