@@ -103,12 +103,12 @@ class StockRepositoryImpl @Inject constructor(
         }   catch (e:IOException){
             e.printStackTrace()
             Resource.Error(
-                message = "Couldn't company info data"
+                message = "Couldn't fetch company info data"
             )
         }   catch (e:HttpException){
             e.printStackTrace()
             Resource.Error(
-                message = "Couldn't company info data"
+                message = "Couldn't fetch company info data"
             )
         }
     }

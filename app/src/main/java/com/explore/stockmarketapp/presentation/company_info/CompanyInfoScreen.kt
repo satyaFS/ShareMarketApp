@@ -73,6 +73,60 @@ fun CompanyInfoScreen(
                     textAlign = TextAlign.Justify,
                     modifier = Modifier.fillMaxWidth(),
                 )
+                Spacer(modifier = Modifier.height(20.dp))
+                Row(
+                    Modifier
+                        .fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+
+                ) {
+                    Text(
+                        text = "52 Week High: ${company.fiftyTwoWeekHighval}",
+                        fontSize = 12.sp,
+                    )
+                    Text(
+                        text = "52 Week Low: ${company.fiftyTwoWeekLow}",
+                        fontSize = 12.sp,
+                    )
+
+                }
+                Spacer(modifier = Modifier.height(20.dp))
+                Row(
+                    Modifier
+                        .fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+
+                ) {
+                    Text(
+                        text = "PE Ratio: ${company.peRatio}",
+                        fontSize = 12.sp,
+                    )
+                    Text(
+                        text = "PB Ratio: ${company.priceToBookRatio}",
+                        fontSize = 12.sp,
+                    )
+
+                }
+                Spacer(modifier = Modifier.height(20.dp))
+                Row(
+                    Modifier
+                        .fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+
+                ) {
+                    Text(
+                        text = "Beta: ${company.beta}",
+                        fontSize = 12.sp,
+                    )
+                    Text(
+                        text = "PB Ratio: ${company.priceToBookRatio}",
+                        fontSize = 12.sp,
+                    )
+
+                }
             }
 
         }

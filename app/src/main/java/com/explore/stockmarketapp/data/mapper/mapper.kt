@@ -28,7 +28,12 @@ fun CompanyInfoDto.toCompanyInfo():CompanyInfo{
         description = description?:"",
         name = name?:"",
         country = country?:"",
-        industry = industry?:""
+        industry = industry?:"",
+        fiftyTwoWeekHighval = fiftyTwoWeekHighval?:"",
+        fiftyTwoWeekLow = fiftyTwoWeekLow?:"",
+        beta = beta?:"",
+        peRatio = peRatio?:"",
+        priceToBookRatio = priceToBookRatio?:""
     )
 }
 
